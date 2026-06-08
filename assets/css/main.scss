@@ -21,15 +21,62 @@
 }
 
 .btn--primary {
-  background-color: transparent !important;
-  border: 2px solid white !important;
-  color: white !important;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
   font-size: 1.1em;
   padding: 0.5em 1.5em;
   margin: 0 0.5em;
 }
 
 .btn--primary:hover {
-  background-color: white !important;
-  color: black !important;
+  background-color: white;
+  color: black;
+}
+
+.page__hero--overlay {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.page__hero--overlay .wrapper {
+  width: 100%;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.hero-buttons {
+  margin-top: 2em;
+}
+
+.hero-buttons a {
+  color: white;
+  border: 2px solid white;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  margin: 0 0.5em;
+  display: inline-block;
+}
+
+.hero-buttons a:hover {
+  background-color: white;
+  color: black;
 }
