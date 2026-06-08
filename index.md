@@ -1,4 +1,5 @@
 ---
+
 layout: splash
 header:
   overlay_image: /images/hero.jpg
