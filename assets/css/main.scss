@@ -1,0 +1,35 @@
+---
+---
+
+@import "minimal-mistakes";
+
+.page__hero--overlay {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page__hero--overlay .wrapper {
+  width: 100%;
+}
+
+.page__content {
+  padding: 0 !important;
+}
+
+.btn--primary {
+  background-color: transparent !important;
+  border: 2px solid white !important;
+  color: white !important;
+  font-size: 1.1em;
+  padding: 0.5em 1.5em;
+  margin: 0 0.5em;
+}
+
+.btn--primary:hover {
+  background-color: white !important;
+  color: black !important;
+}
