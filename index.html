@@ -15,7 +15,7 @@
     .hero {
       background-image: url('images/hero.jpg');
       background-size: cover;
-      background-position: 45% 25%;
+      background-position: 55% 20%;
       height: 100vh;
       display: flex;
       align-items: center;
@@ -85,6 +85,14 @@
     .buttons {
       animation: fadeInDown 2s ease 2.5s forwards;
       opacity: 0;
+    }
+    
+    /* Solo per PC */
+    @media (min-width: 768px) {
+      .hero {
+        align-items: flex-start;
+        padding-top: 25vh;
+      }
     }
     
     /* Solo per cellulare */
