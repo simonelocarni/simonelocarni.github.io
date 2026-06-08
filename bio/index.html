@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bio - Simone Locarni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     
     body, html {
       height: 100%;
-      font-family: 'Times New Roman', Georgia, serif;
+      font-family: 'Playfair Display', Georgia, serif;
     }
     
     .hero {
@@ -37,7 +38,7 @@
       font-size: 3em;
       text-align: center;
       margin-bottom: 1em;
-      font-weight: normal;
+      font-weight: 400;
     }
     
     .lang-section {
@@ -76,7 +77,6 @@
       color: black;
     }
     
-    /* Animazione */
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -86,18 +86,49 @@
       animation: fadeIn 1.5s ease forwards;
     }
     
-    /* Cellulare */
+    /* Solo per PC */
+    @media (min-width: 768px) {
+      .hero {
+        background-attachment: fixed;
+      }
+    }
+    
+    /* Solo per cellulare - layout diverso */
     @media (max-width: 767px) {
+      .hero {
+        background-attachment: scroll;
+        min-height: 40vh;
+        align-items: flex-end;
+        padding: 0;
+      }
+      
       .content {
+        background-color: transparent;
         padding: 2em 1.5em;
+        width: 100%;
+        max-width: 100%;
+        animation: none;
+      }
+      
+      body {
+        background-color: #1a1a1a;
       }
       
       h1 {
         font-size: 2em;
+        margin-bottom: 0.5em;
       }
       
       p {
-        font-size: 1em;
+        font-size: 0.9em;
+      }
+      
+      .lang-header {
+        font-size: 1.3em;
+      }
+      
+      .back a {
+        margin-top: 1em;
       }
     }
   </style>
@@ -111,24 +142,34 @@
         <div class="lang-header">🇮🇹 Italiano</div>
         <p>Simone Locarni è una delle grandi promesse del nuovo jazz europeo. Nato a Verbania ma cresciuto a Mergozzo, inizia lo studio del pianoforte all'età di 6 anni, e si perfeziona in pianoforte classico al Conservatorio Giuseppe Verdi di Milano. Affascinato dalle figure di Tom Waits e Keith Jarrett, si avvicina al jazz all'età di 12 anni, formandosi con Ramberto Ciammarughi, Franco D'Andrea e Umberto Petrin.</p>
 
+        <p>A partire dal 2016 inizia ad esibirsi nei principali festival jazz italiani al fianco di artisti italiani e internazionali come Bebo Ferra, Daniele Di Bonaventura, Michele Gori, Fabrizio Bosso, Andrea Andreoli, Tino Tracanna, Paolo Fresu, Fabrizio Sferra, Paolo Tomelleri, Roberto Dani, Hector Costita, John B. Arnold, Yuri Goloubev, Asaf Sirkis, Mark Lockheart, Javier Girotto, Ana Pilat e Klaus Gesing. Nel 2018, a soli 19 anni, è ospite degli Italian Jazz Days di New York, grazie a una borsa di studio conferitagli dal Festival internazionale del jazz della Spezia.</p>
 
-<p>A partire dal 2016 inizia ad esibirsi nei principali festival jazz italiani al fianco di artisti italiani e internazionali come Bebo Ferra, Daniele Di Bonaventura, Michele Gori, Fabrizio Bosso, Andrea Andreoli, Tino Tracanna, Paolo Fresu, Fabrizio Sferra, Paolo Tomelleri, Roberto Dani, Hector Costita, John B. Arnold, Yuri Goloubev, Asaf Sirkis, Mark Lockheart, Javier Girotto, Ana Pilat e Klaus Gesing. Nel 2018, a soli 19 anni, è ospite degli Italian Jazz Days di New York, grazie a una borsa di studio conferitagli dal Festival internazionale del jazz della Spezia.</p>
+        <p>Nel 2018 esce il suo primo disco Playin' Tenco in quartetto con Stefano Solani, Mario Biasio e Nicola Stranieri, incentrato sulle musiche del cantautore omonimo; nel 2021 viene invece pubblicato Ten Stops, secondo disco solista che vede la partecipazione di Andrea Dulbecco, Bebo Ferra e Riccardo Fioravanti.</p>
 
-<p>Nel 2018 esce il suo primo disco Playin' Tenco in quartetto con Stefano Solani, Mario Biasio e Nicola Stranieri, incentrato sulle musiche del cantautore omonimo; nel 2021 viene invece pubblicato Ten Stops, secondo disco solista che vede la partecipazione di Andrea Dulbecco, Bebo Ferra e Riccardo Fioravanti.</p>
+        <p>Nell'agosto 2022 vince lo Spoleto Europe Jazz Award in qualità di Miglior Talento Jazz Europeo, mentre a dicembre riceve la Menzione Speciale di Tomorrow's Jazz, il premio dedicato ai giovani talenti del jazz italiano promosso da Veneto Jazz e dal Ministero della cultura, "per l'approccio compositivo e improvvisativo".<br>
+        Nel 2023 esce Blies, terzo disco solista e primo in piano solo, seguito da un tour che oltre a diverse parti d'Italia tocca anche Svizzera, Germania e Portogallo.</p>
 
-<p>Nell'agosto 2022 vince lo Spoleto Europe Jazz Award in qualità di Miglior Talento Jazz Europeo, mentre a dicembre riceve la Menzione Speciale di Tomorrow's Jazz, il premio dedicato ai giovani talenti del jazz italiano promosso da Veneto Jazz e dal Ministero della cultura, "per l'approccio compositivo e improvvisativo".<br>
-Nel 2023 esce Blies, terzo disco solista e primo in piano solo, seguito da un tour che oltre a diverse parti d'Italia tocca anche Svizzera, Germania e Portogallo.</p>
+        <p>A febbraio 2024 vince la XXI edizione del Concorso nazionale "Chicco Bettinardi" di Piacenza per Giovani Talenti del Jazz Italiano nella categoria solisti, conquistando anche il Premio del Pubblico. Nel mese di marzo invece vince il 14th European Young Artists' Jazz Award indetto dall'Internationale Jazzwoche Burghausen, primo vincitore come musicista solista nella storia del premio; inaugura inoltre la 53ma edizione del festival con un concerto in piano solo alla Wackerhalle di Burghausen, storica sede della manifestazione, in apertura al concerto di Ron Carter.<br>
+        A giugno 2024 vince infine il Premio della Critica della XXVIII edizione del Premio Internazionale Massimo Urbani.</p>
 
-<p>A febbraio 2024 vince la XXI edizione del Concorso nazionale "Chicco Bettinardi" di Piacenza per Giovani Talenti del Jazz Italiano nella categoria solisti, conquistando anche il Premio del Pubblico. Nel mese di marzo invece vince il 14th European Young Artists' Jazz Award indetto dall'Internationale Jazzwoche Burghausen, primo vincitore come musicista solista nella storia del premio; inaugura inoltre la 53ma edizione del festival con un concerto in piano solo alla Wackerhalle di Burghausen, storica sede della manifestazione, in apertura al concerto di Ron Carter.<br>
-A giugno 2024 vince infine il Premio della Critica della XXVIII edizione del Premio Internazionale Massimo Urbani.</p>
-
-<p>Nel luglio 2025 viene invitato da Mario Brunello come artist in residence di Stresa Festival, dove collabora con artisti del calibro di Javier Girotto e Richard Galliano e compone per l'occasione Suite for a Lake, opera inedita per pianoforte, quartetto d'archi e tromba dedicata al Lago Maggiore ed eseguita in anteprima assoluta con il Quartetto Noûs e Fulvio Sigurtà.</p>
+        <p>Nel luglio 2025 viene invitato da Mario Brunello come artist in residence di Stresa Festival, dove collabora con artisti del calibro di Javier Girotto e Richard Galliano e compone per l'occasione Suite for a Lake, opera inedita per pianoforte, quartetto d'archi e tromba dedicata al Lago Maggiore ed eseguita in anteprima assoluta con il Quartetto Noûs e Fulvio Sigurtà.</p>
       </div>
       
       <div class="lang-section">
         <div class="lang-header">🇬🇧 English</div>
-        <p>Here you write your biography in English. Talk about your training, your musical journey, your projects and your repertoire.</p>
-        <p>You can add more paragraphs if needed.</p>
+        <p>Simone Locarni is one of the great promises of the new European jazz scene. Born in Verbania but raised in Mergozzo, he began studying piano at the age of 6, and perfected his classical piano skills at the Giuseppe Verdi Conservatory in Milan. Fascinated by the figures of Tom Waits and Keith Jarrett, he approached jazz at the age of 12, training with Ramberto Ciammarughi, Franco D'Andrea and Umberto Petrin.</p>
+
+        <p>Starting from 2016, he began performing at the main Italian jazz festivals alongside Italian and international artists such as Bebo Ferra, Daniele Di Bonaventura, Michele Gori, Fabrizio Bosso, Andrea Andreoli, Tino Tracanna, Paolo Fresu, Fabrizio Sferra, Paolo Tomelleri, Roberto Dani, Hector Costita, John B. Arnold, Yuri Goloubev, Asaf Sirkis, Mark Lockheart, Javier Girotto, Ana Pilat and Klaus Gesing. In 2018, at just 19 years old, he was a guest at the Italian Jazz Days in New York, thanks to a scholarship awarded by the International Jazz Festival of La Spezia.</p>
+
+        <p>In 2018 his first album Playin' Tenco was released in quartet with Stefano Solani, Mario Biasio and Nicola Stranieri, focused on the music of the eponymous singer-songwriter; in 2021 Ten Stops was published, his second solo album featuring Andrea Dulbecco, Bebo Ferra and Riccardo Fioravanti.</p>
+
+        <p>In August 2022 he won the Spoleto Europe Jazz Award as Best European Jazz Talent, while in December he received the Special Mention of Tomorrow's Jazz, the award dedicated to young Italian jazz talents promoted by Veneto Jazz and the Ministry of Culture, "for his compositional and improvisational approach".<br>
+        In 2023 Blies was released, his third solo album and first solo piano recording, followed by a tour that touched not only various parts of Italy but also Switzerland, Germany and Portugal.</p>
+
+        <p>In February 2024 he won the XXI edition of the National Competition "Chicco Bettinardi" of Piacenza for Young Talents of Italian Jazz in the soloists category, also winning the Audience Award. In March he won the 14th European Young Artists' Jazz Award organized by the Internationale Jazzwoche Burghausen, the first winner as a solo musician in the history of the award; he also inaugurated the 53rd edition of the festival with a solo piano concert at the Wackerhalle in Burghausen, the historic venue of the event, opening for Ron Carter's concert.<br>
+        In June 2024 he finally won the Critics' Award of the XXVIII edition of the Massimo Urbani International Prize.</p>
+
+        <p>In July 2025 he was invited by Mario Brunello as artist in residence at Stresa Festival, where he collaborated with artists of the caliber of Javier Girotto and Richard Galliano and composed for the occasion Suite for a Lake, an unpublished work for piano, string quartet and trumpet dedicated to Lake Maggiore and performed in world premiere with the Quartetto Noûs and Fulvio Sigurtà.</p>
       </div>
       
       <div class="back">
