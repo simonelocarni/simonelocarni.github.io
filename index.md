@@ -2,13 +2,12 @@
 layout: splash
 header:
   overlay_image: /images/hero.jpg
-  overlay_filter: 0.5
+  overlay_filter: 0.3
   caption: ""
-excerpt: "Pianist | Composer | Improviser"
+  actions:
+    - label: "→ Bio"
+      url: "/bio/"
+    - label: "→ Concerti"
+      url: "/concerti/"
+excerpt: "Simone Locarni&lt;br&gt;Pianist | Composer | Improviser"
 ---
-
-# Simone Locarni
-
-**Pianist | Composer | Improviser**
-
-[→ Bio](/bio/){: .btn .btn--primary} &nbsp;&nbsp;&nbsp; [→ Concerti](/concerti/){: .btn .btn--primary}
