@@ -1,0 +1,21 @@
+---
+---
+
+@import "minimal-mistakes";
+
+.page__hero--overlay {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page__hero--overlay .wrapper {
+  width: 100%;
+}
+
+.page__content {
+  padding: 0 !important;
+}
