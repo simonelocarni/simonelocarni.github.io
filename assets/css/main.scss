@@ -1,0 +1,35 @@
+---
+---
+
+@import "minimal-mistakes";
+
+/* Nascondi header e footer */
+.masthead,
+.page__footer {
+  display: none !important;
+}
+
+/* Full screen hero */
+.page__hero--overlay {
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bottoni trasparenti */
+.btn--primary {
+  background-color: transparent !important;
+  border: 2px solid white !important;
+  color: white !important;
+}
+
+.btn--primary:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Font elegante */
+body {
+  font-family: 'Georgia', 'Times New Roman', serif !important;
+}
