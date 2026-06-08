@@ -19,3 +19,17 @@
 .page__content {
   padding: 0 !important;
 }
+
+.btn--primary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.1em;
+  padding: 0.5em 1.5em;
+  margin: 0 0.5em;
+}
+
+.btn--primary:hover {
+  background-color: white;
+  color: black;
+}
