@@ -21,7 +21,7 @@ paginate_path: /page:num/
 
 author:
   name: "Simone Locarni"
-  avatar: "/images/foto.jpg"
+  avatar: "/images/hero.jpg"
   bio: "Pianist | Composer | Improviser"
   location: "Italia"
 
