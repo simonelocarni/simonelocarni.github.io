@@ -15,7 +15,7 @@
     .hero {
       background-image: url('images/hero.jpg');
       background-size: cover;
-      background-position: center 30%;
+      background-position: center 20%;
       height: 100vh;
       display: flex;
       align-items: center;
@@ -58,6 +58,33 @@
     .buttons a:hover {
       background-color: white;
       color: black;
+    }
+    
+    /* Animazione cascata dall'alto */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .content h1 {
+      animation: fadeInDown 1s ease forwards;
+      opacity: 0;
+    }
+    
+    .content p {
+      animation: fadeInDown 1s ease 0.5s forwards;
+      opacity: 0;
+    }
+    
+    .buttons {
+      animation: fadeInDown 1s ease 1s forwards;
+      opacity: 0;
     }
   </style>
 </head>
