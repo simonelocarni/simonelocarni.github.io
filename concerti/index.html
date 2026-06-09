@@ -55,13 +55,25 @@
       padding: 0 1.5em;
     }
     
-    .concerto-citta {
+    .concerto-formazione {
       font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 0.3em;
+    }
+    
+    .concerto-citta {
+      font-size: 1em;
+      color: #ddd;
     }
     
     .concerto-luogo {
       font-size: 0.9em;
       color: #aaa;
+    }
+    
+    .concerto-link {
+      display: flex;
+      gap: 0.5em;
     }
     
     .concerto-link a {
@@ -106,11 +118,16 @@
       .concerto {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.5em;
+        gap: 0.8em;
       }
       
       .concerto-info {
         padding: 0;
+      }
+      
+      .concerto-link {
+        width: 100%;
+        justify-content: flex-start;
       }
     }
   </style>
@@ -123,37 +140,38 @@
   <div class="container">
     <!-- Concerto 1 -->
     <div class="concerto">
-      <div class="concerto-data">15 Giu 2026</div>
+      <div class="concerto-data">26 Jun 2026</div>
       <div class="concerto-info">
-        <div class="concerto-citta">Milano</div>
-        <div class="concerto-luogo">Blue Note</div>
+        <div class="concerto-formazione">Simone Locarni, Tom Arthurs</div>
+        <div class="concerto-citta">Alessandria, Italia</div>
+        <div class="concerto-luogo">Auditorium Pittaluga</div>
       </div>
       <div class="concerto-link">
-        <a href="#">Info</a>
+        <a href="Info" target="_blank">https://www.conservatoriovivaldi.it/evento/vivaldi-jazz-fest-26-giugno-2026/</a>
       </div>
     </div>
     
     <!-- Concerto 2 -->
     <div class="concerto">
-      <div class="concerto-data">22 Giu 2026</div>
+      <div class="concerto-data">28 Jun 2026</div>
       <div class="concerto-info">
-        <div class="concerto-citta">Roma</div>
-        <div class="concerto-luogo">Auditorium Parco della Musica</div>
+        <div class="concerto-formazione">Simone Locarni, Tom Arthurs</div>
+        <div class="concerto-citta">Domodossola, Italia</div>
+        <div class="concerto-luogo">Convento delle Suore Rosminiane</div>
       </div>
       <div class="concerto-link">
-        <a href="#">Info</a>
       </div>
     </div>
     
     <!-- Concerto 3 -->
     <div class="concerto">
-      <div class="concerto-data">10 Lug 2026</div>
+      <div class="concerto-data">6 Aug 2026</div>
       <div class="concerto-info">
-        <div class="concerto-citta">Bologna</div>
-        <div class="concerto-luogo">Teatro Comunale</div>
+        <div class="concerto-formazione">Simone Locarni, Tom Arthurs</div>
+        <div class="concerto-citta">Piedicavallo, Italia</div>
+        <div class="concerto-luogo">Teatro Regina Margherita</div>
       </div>
       <div class="concerto-link">
-        <a href="#">Info</a>
       </div>
     </div>
     
