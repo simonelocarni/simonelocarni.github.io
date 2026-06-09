@@ -42,6 +42,10 @@
     
     .buttons {
       margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
     }
     
     .buttons a {
@@ -110,11 +114,15 @@
         font-size: 1.2em;
       }
       
-      .buttons a {
-        font-size: 0.9em;
-        padding: 0.5em 1.5em;
-      }
-    }
+      .buttons {
+    gap: 1.5em; /* più spazio tra i bottoni */
+    margin-top: 1.5em;
+  }
+  
+  .buttons a {
+    margin: 0.3em; /* spazio extra quando vanno a capo */
+  }
+}
   </style>
 </head>
 <body>
