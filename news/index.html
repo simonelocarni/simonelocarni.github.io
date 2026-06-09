@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News - Simone Locarni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body, html {
+      font-family: 'Playfair Display', Georgia, serif;
+      background-color: #1a1a1a;
+      color: white;
+    }
+    
+    .hero {
+      background-image: url('../images/news.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .hero h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      font-weight: 400;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3em 2em;
+    }
+    
+    .post {
+      padding: 2em 0;
+      border-bottom: 1px solid #333;
+    }
+    
+    .post-data {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-bottom: 0.5em;
+    }
+    
+    .post-titolo {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      font-weight: bold;
+    }
+    
+    .post-testo {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 1em;
+    }
+    
+    .post-link a {
+      color: white;
+      border: 1px solid white;
+      padding: 0.4em 1em;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    .post-link a:hover {
+      background-color: white;
+      color: black;
+    }
+    
+    .back {
+      text-align: center;
+      margin-top: 3em;
+    }
+    
+    .back a {
+      color: white;
+      border: 2px solid white;
+      padding: 0.5em 1.5em;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    
+    .back a:hover {
+      background-color: white;
+      color: black;
+    }
+    
+    /* Cellulare */
+    @media (max-width: 767px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+      
+      .post-titolo {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>News</h1>
+  </div>
+  
+  <div class="container">
+    <!-- Post 1 -->
+    <div class="post">
+      <div class="post-data">9 Giugno 2026</div>
+      <div class="post-titolo">Nuovo album in arrivo</div>
+      <div class="post-testo">Sono felice di annunciare che il mio quarto album in studio uscirà il prossimo autunno. Un lavoro che esplora i confini tra jazz classico e composizione contemporanea...</div>
+      <div class="post-link">
+        <a href="#" target="_blank">Leggi tutto</a>
+      </div>
+    </div>
+    
+    <!-- Post 2 -->
+    <div class="post">
+      <div class="post-data">15 Maggio 2026</div>
+      <div class="post-titolo">Tour europeo 2026-2027</div>
+      <div class="post-testo">Dopo il successo delle date italiane, il tour si espande in Europa con tappe a Parigi, Berlino, Amsterdam e Londra. Le prevendite apriranno il 1° luglio...</div>
+      <div class="post-link">
+        <a href="#" target="_blank">Leggi tutto</a>
+      </div>
+    </div>
+    
+    <!-- Post 3 -->
+    <div class="post">
+      <div class="post-data">3 Aprile 2026</div>
+      <div class="post-titolo">Collaborazione con l'Orchestra della Scala</div>
+      <div class="post-testo">Un sogno che si avvera: il prossimo 15 novembre sarò ospite dell'Orchestra della Scala per una serata dedicata al jazz sinfonico...</div>
+      <div class="post-link">
+        <a href="#" target="_blank">Leggi tutto</a>
+      </div>
+    </div>
+    
+    <!-- Aggiungi altri post copiando il blocco sopra -->
+    
+    <div class="back">
+      <a href="/">← Home</a>
+    </div>
+  </div>
+</body>
+</html>
