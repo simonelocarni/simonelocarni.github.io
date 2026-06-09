@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concerti - Simone Locarni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body, html {
+      font-family: 'Playfair Display', Georgia, serif;
+      background-color: #1a1a1a;
+      color: white;
+    }
+    
+    .hero {
+      background-image: url('../images/concerti.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .hero h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      font-weight: 400;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3em 2em;
+    }
+    
+    .concerto {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5em 0;
+      border-bottom: 1px solid #333;
+    }
+    
+    .concerto-data {
+      font-size: 1.2em;
+      font-weight: bold;
+      min-width: 120px;
+    }
+    
+    .concerto-info {
+      flex: 1;
+      padding: 0 1.5em;
+    }
+    
+    .concerto-citta {
+      font-size: 1.1em;
+    }
+    
+    .concerto-luogo {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    
+    .concerto-link a {
+      color: white;
+      border: 1px solid white;
+      padding: 0.4em 1em;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: all 0.3s ease;
+    }
+    
+    .concerto-link a:hover {
+      background-color: white;
+      color: black;
+    }
+    
+    .back {
+      text-align: center;
+      margin-top: 3em;
+    }
+    
+    .back a {
+      color: white;
+      border: 2px solid white;
+      padding: 0.5em 1.5em;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    
+    .back a:hover {
+      background-color: white;
+      color: black;
+    }
+    
+    /* Cellulare */
+    @media (max-width: 767px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+      
+      .concerto {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+      }
+      
+      .concerto-info {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Concerti</h1>
+  </div>
+  
+  <div class="container">
+    <!-- Concerto 1 -->
+    <div class="concerto">
+      <div class="concerto-data">15 Giu 2026</div>
+      <div class="concerto-info">
+        <div class="concerto-citta">Milano</div>
+        <div class="concerto-luogo">Blue Note</div>
+      </div>
+      <div class="concerto-link">
+        <a href="#">Info</a>
+      </div>
+    </div>
+    
+    <!-- Concerto 2 -->
+    <div class="concerto">
+      <div class="concerto-data">22 Giu 2026</div>
+      <div class="concerto-info">
+        <div class="concerto-citta">Roma</div>
+        <div class="concerto-luogo">Auditorium Parco della Musica</div>
+      </div>
+      <div class="concerto-link">
+        <a href="#">Info</a>
+      </div>
+    </div>
+    
+    <!-- Concerto 3 -->
+    <div class="concerto">
+      <div class="concerto-data">10 Lug 2026</div>
+      <div class="concerto-info">
+        <div class="concerto-citta">Bologna</div>
+        <div class="concerto-luogo">Teatro Comunale</div>
+      </div>
+      <div class="concerto-link">
+        <a href="#">Info</a>
+      </div>
+    </div>
+    
+    <!-- Aggiungi altri concerti copiando il blocco sopra -->
+    
+    <div class="back">
+      <a href="/">← Home</a>
+    </div>
+  </div>
+</body>
+</html>
