@@ -126,8 +126,23 @@
         <a href="https://simonelocarni.github.io/bio/">→ Bio</a>
         <a href="concerti/">→ Concerti</a>
         <a href="gallery/">→ Gallery</a>
+        <a href="news/">→ News</a>
       </div>
     </div>
   </div>
+
+  <script>
+    if (localStorage.getItem('visited')) {
+      document.querySelector('.content h1').style.animation = 'none';
+      document.querySelector('.content h1').style.opacity = '1';
+      document.querySelector('.content p').style.animation = 'none';
+      document.querySelector('.content p').style.opacity = '1';
+      document.querySelector('.buttons').style.animation = 'none';
+      document.querySelector('.buttons').style.opacity = '1';
+    } else {
+      localStorage.setItem('visited', 'true');
+    }
+  </script>
+  
 </body>
 </html>
