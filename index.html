@@ -79,17 +79,17 @@
     }
     
     .content h1 {
-      animation: fadeInDown 2s ease 1s forwards;
+      animation: fadeInDown 1,3s ease 0,5s forwards;
       opacity: 0;
     }
     
     .content p {
-      animation: fadeInDown 2s ease 2s forwards;
+      animation: fadeInDown 1,3s ease 0,8s forwards;
       opacity: 0;
     }
     
     .buttons {
-      animation: fadeInDown 2s ease 3s forwards;
+      animation: fadeInDown 1,3s ease 1,3s forwards;
       opacity: 0;
     }
     
@@ -145,20 +145,6 @@
         <a href="contact/">→ Contact</a>
       </div>
     </div>
-  </div>
-
-  <script>
-    if (localStorage.getItem('visited')) {
-      document.querySelector('.content h1').style.animation = 'none';
-      document.querySelector('.content h1').style.opacity = '1';
-      document.querySelector('.content p').style.animation = 'none';
-      document.querySelector('.content p').style.opacity = '1';
-      document.querySelector('.buttons').style.animation = 'none';
-      document.querySelector('.buttons').style.opacity = '1';
-    } else {
-      localStorage.setItem('visited', 'true');
-    }
-  </script>
-  
+  </div> 
 </body>
 </html>
