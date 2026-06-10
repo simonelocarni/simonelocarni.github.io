@@ -79,16 +79,19 @@
     }
     
     .content h1 {
-      animation: fadeInDown 1,3s ease 0,5s forwards;
-    }
-    
-    .content p {
-      animation: fadeInDown 1,3s ease 0,8s forwards;
-    }
-    
-    .buttons {
-      animation: fadeInDown 1,3s ease 1,3s forwards;
-    }
+  opacity: 0;
+  animation: fadeInDown 1s ease 0.3s forwards !important;
+}
+
+.content p {
+  opacity: 0;
+  animation: fadeInDown 1s ease 0.8s forwards !important;
+}
+
+.buttons {
+  opacity: 0;
+  animation: fadeInDown 1s ease 1.3s forwards !important;
+}
     
     /* Solo per PC */
     @media (min-width: 768px) {
